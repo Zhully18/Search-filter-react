@@ -1,0 +1,102 @@
+.search_input {
+    margin-top: 20px;
+}
+.search_input input{
+    padding: 1rem 14rem;
+    border-radius: 30px;
+    margin-left: 75px;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid #666;
+}
+.search_input .search_icon{
+    font-size: 30px;
+    color: blue;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 11px;
+    z-index: 1000;
+}
+
+.course_wrapper{
+    width: 100%;
+    display: grid;
+    background: rgb(245, 245, 255);
+}
+.course_wrapper h2{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 90px;
+    font-size: 35px;
+}
+.course_wrapper h2 span{
+    color: rgb(59, 59, 223);
+}
+.course_container {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    gap: 2.5rem;
+} 
+.course_card{
+    position: relative;
+    background-color: #fff;
+    padding: 2rem 0;
+    border: 1px solid hsl(0, 0%, 94%);
+    text-align: center;
+    transition: .3s;
+} 
+.course_img {
+    height: 125px;
+    margin-bottom: 1rem;
+}  
+.course_name, .course_price, .course_standard{
+    text-align: start;
+    margin-left: 10px;
+}
+.course_name {
+    margin-bottom: .5rem; 
+} 
+.course_price {
+    color: rgb(59, 59, 223);
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-weight: 600;
+} 
+.course_standard{
+    font-size: 16px;
+    color: #8d8c8c;
+}
+.course_standard .analytics{
+    font-size: 18px;
+    color: black;
+    margin-right: 5px;
+}
+.course_button{
+    display: inline-block;
+    background-color: #0041C2;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: .5rem 1.8rem;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: .3s;
+}
+.course_card:hover {
+    box-shadow: 0 8px 32px hsla(0, 0%, 10%, .1);
+}
+@media (max-width: 480px){
+    .course_container {
+        grid-template-columns: repeat(2, 130px);
+        justify-content: center;
+      }
+    .course_name{
+        font-size: 16px;
+    }
+    .course_button{
+        padding: .3rem 1.2rem
+    }
+}
